@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundara Karma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   
+<header>
+      <div class="socials">
+        <img src="img/fb.webp" alt="">
+        <img src="img/ig.webp" alt="">
+        <img src="img/twit.webp" alt="">
+        <img src="img/yt.webp" alt="">
+      </div>
+
+      <div class="dropdown">
+        <button class="hamburger-button" role="button">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Merch Store</a>
+            <a href="#">Tickets</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+  </header>
+
+
+  <section class="section1">
+    <div class="logodiv">
+      <img src="img/SL LOGO LOWREZ.png" alt="" class="logo">
+   </div>
+    </section>
+  
+    
+  
+    <script>
+      // Get the required elements
+      const section1 = document.querySelector('.section1');
+      const logo = document.querySelector('.logo');
+    
+      // Store the original logo offset top and offset left positions
+      const originalLogoOffsetTop = logo.offsetTop;
+      const originalLogoOffsetLeft = logo.offsetLeft;
+    
+      // Function to handle scroll event
+      function handleScroll() {
+        const scrollPosition = window.scrollY;
+    
+        // Calculate the new background position based on the scroll position
+        const bgPosition = `${-scrollPosition * 5}px ${-scrollPosition * 0}px`; // Multiply the scrollPosition by 5 to move the background image faster
+    
+        // Update the background position of the element
+        section1.style.backgroundPosition = bgPosition;
+    
+        // Check if the user is 200px away from the top of the screen
+        if (scrollPosition >= 200) {
+          logo.classList.add('moved');
+        } else {
+          logo.classList.remove('moved');
+        }
+    
+        // Check if the logo has reached the top of the screen
+        if (scrollPosition >= 300) {
+          logo.classList.add('fixed');
+        } else {
+          logo.classList.remove('fixed');
+        }
+    
+        // Check if the user has scrolled back to the top
+        if (scrollPosition === 0) {
+          logo.classList.remove('fixed', 'moved');
+          logo.style.top = originalLogoOffsetTop + 'px';
+          logo.style.left = originalLogoOffsetLeft + 'px';
+        }
+      }
+    
+      // Add event listener for scroll event
+      window.addEventListener('scroll', handleScroll);
+    </script>
+    
+    
+    
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section3img">
+
+
+<div >
+<h1 class="outnow">friends of mine</h1>
+<h1 class="outnow">OUT NOW</h1>
+
+</div>
+
+
+<img class="fomaw"   src="img/friends of mine (single artwork).jpeg" alt="">
+
+
+<div>
+    <button href="https://www.sundarakarma.com/" class="button-57" role="button"><span class="text">Merch</span><span>Store</span></button>
+</div>
+</section>
+
+
+<script>
+  // Select the section element
+const section = document.querySelector('.section3img');
+
+// Create an intersection observer instance
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // If the section is 50% or more visible
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+      section.style.opacity = '1'; // Show the image
+    } else {
+      section.style.opacity = '0'; // Hide the image
+    }
+  });
+}, {
+  threshold: 0.5 // Trigger when 50% of the section is visible
+});
+
+// Start observing the section
+observer.observe(section);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<section class="tour-section">
+    <div class="tour-container">
+      <div class="scroll-indicator"></div>
+      <div id="seated-55fdf2c0" data-artist-id="93990b4d-0a95-40ee-892f-bf69631b3bdf" data-css-version="3"></div>
+      
+  </section>
+
+
+
+  <script src="https://widget.seated.com/app.js"></script>
+
+
+
+
+
+
+
+
+
+<section class="section2">
+
+  <div class="form-container">
+    <form>
+        <h2></h2>
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <button type="submit">Sign Up<span class="text"></span><span>Better Luck Next Time</span></button>
+      </div>
+    </form>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="tour-section">
+  <div class="tour-container">
+    <div class="scroll-indicator">
+
+    </div>
+   
+    <div class="mgmt">
+      <h1 class="contact_h1">MANAGEMENT</h1>
+        <h3 class="contact_h2">TE•AM MANAGEMENT</h3>
+        <p class="contact_p">TERRY@TE-ARTISTMANAGEMENT.COM
+        </div>
+      
+      <div class="live">  
+        <h1 class="contact_h1">LIVE</h1>
+        <h3 class="contact_h2">MATT BATES
+        PRIMARY TALENT INTERNATIONAL (UK)</h3>
+        <p class="contact_p">MATT@PRIMARYTALENT.COM</p>
+        
+        <h3 class="contact_h2">WILL MARSHALL
+        PRIMARY TALENT INTERNATIONAL (UK) </h3>
+        <p class="contact_p">WILL@PRIMARYTALENT.COM</p>
+        
+      </div>
+    </div>
+    
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
